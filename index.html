@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
-    <a class="sticky-button" href="#home">^</a>
+    <a class="sticky-button" href="#home">
+        ⮝
+    </a>
     <div class="main-container">
         <header id="home">
             <div class="header-container">
@@ -15,7 +18,6 @@
                     <h1>Portfolio</h1>
                     <nav>
                         <ul>
-                            <!-- <li><a href="#home">Home</a></li> -->
                             <li><a href="#about">About</a></li>
                             <li><a href="#skills">Skills</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -26,58 +28,78 @@
                 <div class="header-intro">
                     <h1>Hello and welcome!</h1>
                     <p>A portfolio by Eduard Ocheretnyi</p>
-                    <!-- <a href="#portfolio" class="jump-to-portfolio">Jump to portfolio</a> -->
                 </div>
             </div>
         </header>
         <section id="about" class="checker-white">
             <div class="section-content">
                 <h1>About me</h1>
-                <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate dolor ut odio vehicula, ut faucibus felis faucibus. Sed congue vitae diam eu tincidunt. Fusce lobortis porta lacinia. Mauris enim sapien, euismod nec dignissim in, maximus at est. Vestibulum ac lorem ut dui rhoncus feugiat non ut magna. Phasellus venenatis, felis sed commodo ullamcorper, tortor orci euismod lectus, eleifend interdum velit diam a lorem. </p>
-                <p class="section-paragraph">Donec euismod lacinia lacus, vitae aliquet orci pulvinar sed. Mauris commodo volutpat molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pretium ac lorem in dictum. In efficitur luctus hendrerit. Mauris nec blandit orci. Nam aliquam mollis ante. Vestibulum convallis semper consectetur. Fusce scelerisque, urna eget bibendum, ipsum turpis interdum urna, sit amet vulputate neque tortor id sapien!</p>
+                <p class="section-paragraph">Hello! My name is Eduard and I'm a passionate developer, trying to improve my skills and learn more about programming in general. I'm quite inquisitive and like to learn new things, however difficult it may be. At the moment I am studying in the <a class="about-me-link" href="https://chdtu.edu.ua/">Cherkasy state technological university</a>, where I learn how to be a better developer as well as ins and outs of different modern systems.</p>
+                <p class="section-paragraph">For the future I plan to continue working in this sphere and work on improving my technical and theoretical knowledge. If you would like to learn more about my skills and persona feel free to contact me!</p>
             </div>
         </section>
         <section id="skills" class="checker-black">
             <div class="section-content">
                 <h1>Skills</h1>
-                <img class="skills-img" src="images/cat.jpg">
+                <img class="skills-img" src="images/main/cat.jpg">
             </div>
             <div class="section-content">
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue 95%, lightcoral 1%)">Java</p>
+                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--java-percentage, 80%), lightcoral calc(100% - var(--java-percentage, 80%)))">Java</p>
                 <p class="skills-indepth">Java Core, Spring Boot, Maven, Hibernate, JavaFX</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue 65%, lightcoral 1%)">C#/C++</p>
+                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--csharp-percentage, 65%), lightcoral calc(100% - var(--csharp-percentage, 65%)))">C#/C++</p>
                 <p class="skills-indepth">.NET Core, Blazor, Entity Framework</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue 70%, lightcoral 1%)">Python</p>
+                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--python-percentage, 70%), lightcoral calc(100% - var(--python-percentage, 70%)))">Python</p>
                 <p class="skills-indepth">Python Core, Django, Flask, PyMongo, Tkinter</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue 85%, lightcoral 1%)">Web stack</p>
+                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--webstack-percentage, 85%), lightcoral calc(100% - var(--webstack-percentage, 85%)))">Web stack</p>
                 <p class="skills-indepth">HTML, CSS, JS, React, Node</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue 95%, lightcoral 1%)">SQL</p>
+                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--sql-percentage, 95%), lightcoral calc(100% - var(--sql-percentage, 95%)))">SQL</p>
                 <p class="skills-indepth">MySQL, PostgreSQL, MS Access</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue 65%, lightcoral 1%)">Git</p>
+                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--git-percentage, 65%), lightcoral calc(100% - var(--git-percentage, 65%)))">Git</p>
                 <p class="skills-indepth">Basic Git operations</p>
             </div>
         </section>
         <section id="portfolio" class="checker-white">
             <div class="section-content">
                 <h1>Portfolio</h1>
-                <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate dolor ut odio vehicula, ut faucibus felis faucibus. Sed congue vitae diam eu tincidunt. Fusce lobortis porta lacinia. Mauris enim sapien, euismod nec dignissim in, maximus at est. Vestibulum ac lorem ut dui rhoncus feugiat non ut magna. Phasellus venenatis, felis sed commodo ullamcorper, tortor orci euismod lectus, eleifend interdum velit diam a lorem. Donec euismod lacinia lacus, vitae aliquet orci pulvinar sed. Mauris commodo volutpat molestie. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pretium ac lorem in dictum. In efficitur luctus hendrerit. Mauris nec blandit orci. Nam aliquam mollis ante. </p>
-                <p class="section-paragraph">Vestibulum convallis semper consectetur. Fusce scelerisque, urna eget bibendum, ipsum turpis interdum urna, sit amet vulputate neque tortor id sapien!</p>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slides" id="slides">
+                            <div class="loading">Processing..</div>
+                        </div>
+                        <button class="arrow arrow-left" id="prevBtn">❮</button>
+                        <button class="arrow arrow-right" id="nextBtn">❯</button>
+                    </div>
+                    <div class="dots" id="dots"></div>
+                </div>
             </div>
         </section>
         <footer id="links" class="checker-black">
-            <div style="position: relative; margin: 2rem; padding: 2rem;"><h1 style="position: absolute;">Links</h1></div>
-            <div class="links-content">
-                <div class="links-content-item">
-                    <p><a class="links-content-item-link" href="https://github.com/forgjayjay">GitHub</a></p>
-                    <p><a class="links-content-item-link" href="https://www.linkedin.com/in/eduardocheretnyi/">LinkedIn</a></p>
+            <!-- <div style="position: relative; margin: 2rem; padding: 2rem;"><h1 style="position: absolute;">Links</h1></div> -->
+            <h1>Links</h1>
+            <div class="footer-container">
+                <div class="footer-container-item">
+                    <p><a class="footer-container-item-link" href="https://github.com/forgjayjay">GitHub</a></p>
+                    <p><a class="footer-container-item-link" href="https://www.linkedin.com/in/eduardocheretnyi/">LinkedIn</a></p>
                 </div>
-                <div class="links-content-item">
-                    <p>+38 (063) 160-01-53</p>
-                    <p>+49 (173) 481-60-05</p>
-                    <p><a class="links-content-item-link" href="mailto:edlink2004@gmail.com">edlink2004@gmail.com</a></p>
+                <div class="footer-container-item">
+                    <p style="unicode-bidi:bidi-override; direction: rtl;">35-10-061 (360) 83+</p>
+                    <p style="unicode-bidi:bidi-override; direction: rtl;">50-06-184 (371) 94+</p>
+                    <p><a style="unicode-bidi:bidi-override; direction: rtl;" class="footer-container-item-link" href="#" onclick="location.href='mail' + 'to:' + 'e.ocheretnyi' + '@' + 'proton.me'">em.notorp@iynterehco.e</a></p>
                 </div>
             </div>
         </footer>
     </div>
 </body>
+<script src="js/card-fetcher.js"></script>
 </html>
+
+<!-- test for when something is overflowing -->
+<!-- https://stackoverflow.com/questions/31458477/find-element-that-is-causing-the-showing-of-horizontal-scrollbar-in-google-chrom -->
+<!-- var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
+for (; i < all.length; i++) {
+    rect = all[i].getBoundingClientRect();
+    if (rect.right > docWidth || rect.left < 0){
+        console.log(all[i]);
+        all[i].style.borderTop = '1px solid red';
+    }
+} -->

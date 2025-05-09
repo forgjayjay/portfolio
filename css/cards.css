@@ -1,0 +1,86 @@
+.slider-container {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.arrow:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.arrow-left {
+    left: 20px;
+}
+.arrow-right {
+    right: 20px;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.dot.active {
+    background: #333;
+}
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 18px;
+    color: #666;
+}
