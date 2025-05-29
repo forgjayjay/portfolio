@@ -23,7 +23,7 @@ async function fetchCatImages() {
             slidesContainer.appendChild(slide);
         });
         
-        updateSlider();
+        updateDots  ();
         
     } catch (error) {
         console.error('Error fetching cat images:', error);
@@ -89,8 +89,8 @@ prevBtn.addEventListener('click', prevSlide);
 
 slidesContainer.innerHTML = '';
 dotsContainer.innerHTML = '';
-addPortfolioComponents();
-//fetchCatImages();
+//addPortfolioComponents();
+fetchCatImages();
 
 let slideInterval = setInterval(nextSlide, 5000);
 
