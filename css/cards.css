@@ -1,44 +1,68 @@
 .slider-container {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 600px;
+    margin: 2rem auto 0;
     position: relative;
+    display: grid;
+    grid-template-rows: 1fr 0.3fr;
+    align-items: center;
 }
+
 .slider-title {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
+    font-size: 1.5rem;
 }
+
+.checker-black .slider-title {
+    color: #f5f5f5;
+}
+
 .slider {
     position: relative;
     width: 100%;
     height: 400px;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    background: #fff;
 }
+
+.checker-black .slider {
+    background: #1a1a1a;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
 .slides {
     display: flex;
     width: 100%;
     height: 100%;
     transition: transform 0.5s ease-in-out;
 }
+
 .slide {
     min-width: 100%;
     height: 100%;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .slide img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
+
 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -46,36 +70,69 @@
     cursor: pointer;
     z-index: 10;
     border: none;
-    font-size: 24px;
+    font-size: 20px;
     color: #333;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
 .arrow:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+.checker-black .arrow {
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #f5f5f5;
+}
+
+.checker-black .arrow:hover {
+    background-color: rgba(44, 44, 44, 1);
+}
+
 .arrow-left {
     left: 20px;
 }
+
 .arrow-right {
     right: 20px;
 }
+
 .dots {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 20px;
+    gap: 8px;
 }
+
 .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
     background: #ccc;
-    margin: 0 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
+
+.dot:hover {
+    background: #999;
+    transform: scale(1.2);
+}
+
 .dot.active {
     background: #333;
+    transform: scale(1.3);
 }
+
+.checker-black .dot {
+    background: #666;
+}
+
+.checker-black .dot.active {
+    background: #f5f5f5;
+}
+
 .loading {
     display: flex;
     justify-content: center;
@@ -83,4 +140,61 @@
     height: 100%;
     font-size: 18px;
     color: #666;
+    background: #f8f9fa;
+}
+
+.checker-black .loading {
+    color: #ccc;
+    background: #1a1a1a;
+}
+
+/* Responsive Design for Slider */
+@media (max-width: 768px) {
+    .slider-container {
+        max-width: 100%;
+        margin: 1rem auto 0;
+    }
+
+    .slider {
+        border-radius: 8px;
+    }
+
+    .arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .arrow-left {
+        left: 10px;
+    }
+
+    .arrow-right {
+        right: 10px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        height: 250px;
+    }
+
+    .arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .arrow-left {
+        left: 5px;
+    }
+
+    .arrow-right {
+        right: 5px;
+    }
 }

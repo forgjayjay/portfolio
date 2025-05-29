@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Eduard Ocheretnyi</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
-    <a class="sticky-button" href="#home">
+    <a class="sticky-button" href="#home" aria-label="Back to top">
         ⮝
     </a>
+    
     <div class="main-container">
         <header id="home">
             <div class="header-container">
@@ -26,55 +27,121 @@
                     </nav>
                 </div>
                 <div class="header-intro">
-                    <h1>Hello and welcome!</h1>
-                    <p>A portfolio by Eduard Ocheretnyi</p>
+                    <h1>This is Eduard</h1>
+                    <p>A software developer from Ukraine</p>
                 </div>
             </div>
         </header>
+
         <section id="about" class="checker-white">
             <div class="section-content">
                 <h1>About me</h1>
-                <p class="section-paragraph">Hello! My name is Eduard and I'm a passionate developer, trying to improve my skills and learn more about programming in general. I'm quite inquisitive and like to learn new things, however difficult it may be. At the moment I am studying in the <a class="about-me-link" href="https://chdtu.edu.ua/">Cherkasy state technological university</a>, where I learn how to be a better developer as well as ins and outs of different modern systems.</p>
-                <p class="section-paragraph">For the future I plan to continue working in this sphere and work on improving my technical and theoretical knowledge. If you would like to learn more about my skills and persona feel free to contact me!</p>
+                <p class="section-paragraph">
+                    Hello! My name is Eduard and I'm a passionate developer, trying to improve my skills and learn more about programming in general. I'm quite inquisitive and like to learn new things, however difficult it may be. At the moment I am studying in the <a class="about-me-link" href="https://chdtu.edu.ua/">Cherkasy state technological university</a>, where I learn how to be a better developer as well as ins and outs of different modern systems.
+                </p>
+                <p class="section-paragraph">
+                    For the future I plan to continue working in this sphere and work on improving my technical and theoretical knowledge. If you would like to learn more about my skills and persona feel free to contact me!
+                </p>
             </div>
         </section>
+
         <section id="skills" class="checker-black">
             <div class="section-content">
                 <h1>Skills</h1>
-                <img class="skills-img" src="images/main/cat.jpg">
-            </div>
-            <div class="section-content">
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--java-percentage, 80%), lightcoral calc(100% - var(--java-percentage, 80%)))">Java</p>
-                <p class="skills-indepth">Java Core, Spring Boot, Maven, Hibernate, JavaFX</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--csharp-percentage, 65%), lightcoral calc(100% - var(--csharp-percentage, 65%)))">C#/C++</p>
-                <p class="skills-indepth">.NET Core, Blazor, Entity Framework</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--python-percentage, 70%), lightcoral calc(100% - var(--python-percentage, 70%)))">Python</p>
-                <p class="skills-indepth">Python Core, Django, Flask, PyMongo, Tkinter</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--webstack-percentage, 85%), lightcoral calc(100% - var(--webstack-percentage, 85%)))">Web stack</p>
-                <p class="skills-indepth">HTML, CSS, JS, React, Node</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--sql-percentage, 95%), lightcoral calc(100% - var(--sql-percentage, 95%)))">SQL</p>
-                <p class="skills-indepth">MySQL, PostgreSQL, MS Access</p>
-                <p class="skills-paragraph" style="--grad: linear-gradient(to right, lightblue var(--git-percentage, 65%), lightcoral calc(100% - var(--git-percentage, 65%)))">Git</p>
-                <p class="skills-indepth">Basic Git operations</p>
+                <div class="skills-container">
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <p class="skill-name">Java</p>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                            <p class="skills-indepth">Java Core, Spring Boot, Maven, Hibernate, JavaFX</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <p class="skill-name">C#/C++</p>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                            <p class="skills-indepth">.NET Core, Blazor, Entity Framework</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <p class="skill-name">Python</p>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                            <p class="skills-indepth">Python Core, Django, Flask, PyMongo, Tkinter</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <p class="skill-name">Web Stack</p>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                            <p class="skills-indepth">HTML, CSS, JS, React, Node</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <p class="skill-name">SQL</p>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                            <p class="skills-indepth">MySQL, PostgreSQL, MS Access</p>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <p class="skill-name">Git</p>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                            <p class="skills-indepth">Basic Git operations</p>
+                        </div>
+                    </div>
+                    
+                    <img class="skills-img" src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Developer workspace">
+                </div>
             </div>
         </section>
+
         <section id="portfolio" class="checker-white">
             <div class="section-content">
                 <h1>Portfolio</h1>
+                <p class="section-paragraph">
+                    This section is dedicated to my completed and in progress projects. Each image is a link to a site!
+                </p>
                 <div class="slider-container">
                     <div class="slider">
                         <div class="slides" id="slides">
                             <div class="loading">Processing..</div>
                         </div>
-                        <button class="arrow arrow-left" id="prevBtn">❮</button>
-                        <button class="arrow arrow-right" id="nextBtn">❯</button>
+                        <button class="arrow arrow-left" id="prevBtn" aria-label="Previous slide">❮</button>
+                        <button class="arrow arrow-right" id="nextBtn" aria-label="Next slide">❯</button>
                     </div>
                     <div class="dots" id="dots"></div>
                 </div>
             </div>
         </section>
+
         <footer id="links" class="checker-black">
-            <!-- <div style="position: relative; margin: 2rem; padding: 2rem;"><h1 style="position: absolute;">Links</h1></div> -->
             <h1>Links</h1>
             <div class="footer-container">
                 <div class="footer-container-item">
@@ -89,17 +156,6 @@
             </div>
         </footer>
     </div>
+    <script src="js/card-fetcher.js"></script>
 </body>
-<script src="js/card-fetcher.js"></script>
 </html>
-
-<!-- test for when something is overflowing -->
-<!-- https://stackoverflow.com/questions/31458477/find-element-that-is-causing-the-showing-of-horizontal-scrollbar-in-google-chrom -->
-<!-- var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
-for (; i < all.length; i++) {
-    rect = all[i].getBoundingClientRect();
-    if (rect.right > docWidth || rect.left < 0){
-        console.log(all[i]);
-        all[i].style.borderTop = '1px solid red';
-    }
-} -->
