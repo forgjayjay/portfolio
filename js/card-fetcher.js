@@ -34,13 +34,28 @@ async function fetchCatImages() {
 function addPortfolioComponents(){ 
         var temp = document.createElement('div');
         temp.className = 'slide';
-        temp.innerHTML = `<a href="https://forgjayjay.github.io/task-tracker-site-git-pages-test/price.html"><img src="images/preview/tasktracker.png" alt="Biography cat"></a>`;
+        temp.innerHTML = `<a href="https://forgjayjay.github.io/task-tracker-site-git-pages-test/price.html"><img src="images/preview/tasktracker.png" alt="tasktracker"></a>`;
         slidesContainer.appendChild(temp);    
 
         temp = document.createElement('div');
         temp.className = 'slide';
-        temp.innerHTML = `<a href="resume.html"><img src="images/resume/cat.jpg" alt="Resume"></a>`;
+        temp.innerHTML = `<a href="https://forgjayjay.github.io/WebGL-test/"><img src="images/preview/webgl.png" alt="webgl"></a>`;
         slidesContainer.appendChild(temp);   
+
+        temp = document.createElement('div');
+        temp.className = 'slide';
+        temp.innerHTML = `<a href="https://github.com/forgjayjay/steam-tracker"><img src="images/preview/steamtracker.png" alt="steamtracker"></a>`;
+        slidesContainer.appendChild(temp);
+
+        temp = document.createElement('div');
+        temp.className = 'slide';
+        temp.innerHTML = `<a href="https://github.com/forgjayjay/discord-gpt"><img src="images/preview/oracle.png" alt="discord-gpt"></a>`;
+        slidesContainer.appendChild(temp);
+
+        temp = document.createElement('div');
+        temp.className = 'slide';
+        temp.innerHTML = `<a href="https://github.com/forgjayjay/ttv-emote-platform"><img src="images/preview/emtoreplatform.png" alt="emoteplatform"></a>`;
+        slidesContainer.appendChild(temp);
 
         updateDots();
 }
