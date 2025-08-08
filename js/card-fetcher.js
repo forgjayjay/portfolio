@@ -34,7 +34,7 @@ async function fetchCatImages() {
 function addPortfolioComponents(){ 
         var temp = document.createElement('div');
         temp.className = 'slide';
-        temp.innerHTML = `<a href="biography.html"><img src="images/biography/cat.jpg" alt="Biography cat"></a>`;
+        temp.innerHTML = `<a href="https://forgjayjay.github.io/task-tracker-site-git-pages-test/price.html"><img src="images/preview/tasktracker.png" alt="Biography cat"></a>`;
         slidesContainer.appendChild(temp);    
 
         temp = document.createElement('div');
@@ -89,8 +89,8 @@ prevBtn.addEventListener('click', prevSlide);
 
 slidesContainer.innerHTML = '';
 dotsContainer.innerHTML = '';
-//addPortfolioComponents();
-fetchCatImages();
+addPortfolioComponents();
+//fetchCatImages();
 
 let slideInterval = setInterval(nextSlide, 5000);
 
