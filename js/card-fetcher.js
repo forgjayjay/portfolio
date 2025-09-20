@@ -47,15 +47,15 @@ function addPortfolioComponents(){
         temp.innerHTML = `<a href="https://github.com/forgjayjay/steam-tracker"><img src="images/preview/steamtracker.png" alt="steamtracker"></a>`;
         slidesContainer.appendChild(temp);
 
-        temp = document.createElement('div');
-        temp.className = 'slide';
-        temp.innerHTML = `<a href="https://github.com/forgjayjay/discord-gpt"><img src="images/preview/oracle.png" alt="discord-gpt"></a>`;
-        slidesContainer.appendChild(temp);
+        // temp = document.createElement('div');
+        // temp.className = 'slide';
+        // temp.innerHTML = `<a href="https://github.com/forgjayjay/discord-gpt"><img src="images/preview/oracle.png" alt="discord-gpt"></a>`;
+        // slidesContainer.appendChild(temp);
 
-        temp = document.createElement('div');
-        temp.className = 'slide';
-        temp.innerHTML = `<a href="https://github.com/forgjayjay/ttv-emote-platform"><img src="images/preview/emtoreplatform.png" alt="emoteplatform"></a>`;
-        slidesContainer.appendChild(temp);
+        // temp = document.createElement('div');
+        // temp.className = 'slide';
+        // temp.innerHTML = `<a href="https://github.com/forgjayjay/ttv-emote-platform"><img src="images/preview/emtoreplatform.png" alt="emoteplatform"></a>`;
+        // slidesContainer.appendChild(temp);
 
         updateDots();
 }
